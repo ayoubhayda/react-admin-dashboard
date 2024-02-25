@@ -1,5 +1,5 @@
-import Navbar from "./global/Navbar";
-import SideBar from "./global/Sidebar";
+import Navbar from "./layout/navbar";
+import SideBar from "./layout/sidebar";
 import Dashboard from "./dashboard";
 import Team from "./team";
 import Invoices from "./invoices";
