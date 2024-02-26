@@ -4,17 +4,10 @@
 /* Global Style */
 html,
 body,
-#root,
-.app,
-.content {
+#root {
   height: 100%;
   width: 100%;
   font-family: "Source Sans 3", sans-serif;
-}
-
-.app {
-  display: flex;
-  position: relative;
 }
 
 ::-webkit-scrollbar {

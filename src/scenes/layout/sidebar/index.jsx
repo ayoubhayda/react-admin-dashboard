@@ -30,12 +30,14 @@ const SideBar = () => {
       backgroundColor={colors.primary[400]}
       rootStyles={{
         border: 0,
-        height: "100vh",
+        height: "100%",
       }}
       collapsed={collapsed}
     >
       <Menu
-        menuItemStyles={{ button: { ":hover": { background: "transparent" } } }}
+        menuItemStyles={{
+          button: { ":hover": { background: "transparent" } },
+        }}
       >
         <MenuItem
           rootStyles={{
@@ -51,7 +53,7 @@ const SideBar = () => {
             }}
           >
             {!collapsed && (
-              <Typography variant="h3" fontWeight="400" ml="15px">
+              <Typography variant="h3" color={colors.gray[100]}>
                 ADMINS
               </Typography>
             )}
@@ -91,11 +93,15 @@ const SideBar = () => {
         </Box>
       )}
 
-      <Box>
+      <Box mb={5} pl={collapsed ? undefined : "5%"}>
         <Menu
           menuItemStyles={{
             button: {
-              ":hover": { background: colors.primary[500] },
+              ":hover": {
+                color: "#868dfb",
+                background: "transparent",
+                transition: ".4s ease",
+              },
             },
           }}
         >
@@ -113,12 +119,16 @@ const SideBar = () => {
           color={colors.gray[300]}
           sx={{ m: "15px 0 5px 20px" }}
         >
-          Data
-        </Typography>
+          {!collapsed ? "Data" : " "}
+        </Typography>{" "}
         <Menu
           menuItemStyles={{
             button: {
-              ":hover": { background: colors.primary[500] },
+              ":hover": {
+                color: "#868dfb",
+                background: "transparent",
+                transition: ".4s ease",
+              },
             },
           }}
         >
@@ -152,12 +162,16 @@ const SideBar = () => {
           color={colors.gray[300]}
           sx={{ m: "15px 0 5px 20px" }}
         >
-          Pages
+          {!collapsed ? "Pages" : " "}
         </Typography>
         <Menu
           menuItemStyles={{
             button: {
-              ":hover": { background: colors.primary[500] },
+              ":hover": {
+                color: "#868dfb",
+                background: "transparent",
+                transition: ".4s ease",
+              },
             },
           }}
         >
@@ -191,12 +205,16 @@ const SideBar = () => {
           color={colors.gray[300]}
           sx={{ m: "15px 0 5px 20px" }}
         >
-          Charts
+          {!collapsed ? "Charts" : " "}
         </Typography>
         <Menu
           menuItemStyles={{
             button: {
-              ":hover": { background: colors.primary[500] },
+              ":hover": {
+                color: "#868dfb",
+                background: "transparent",
+                transition: ".4s ease",
+              },
             },
           }}
         >
