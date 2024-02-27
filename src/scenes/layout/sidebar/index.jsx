@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Avatar, Box, IconButton, Typography, useTheme } from "@mui/material";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { tokens } from "../../../theme";
 import { Menu, MenuItem, Sidebar } from "react-pro-sidebar";
 import {
@@ -19,10 +19,11 @@ import {
 } from "@mui/icons-material";
 import avatar from "../../../assets/images/avatar.png";
 import Item from "./Item";
+import { ToggledContext } from "../../../App";
 
 const SideBar = () => {
   const [collapsed, setCollapsed] = useState(false);
-  const [selected, setSelected] = useState("Dashboard");
+  const { toggled, setToggled } = useContext(ToggledContext);
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
@@ -33,6 +34,9 @@ const SideBar = () => {
         height: "100%",
       }}
       collapsed={collapsed}
+      onBackdropClick={() => setToggled(false)}
+      toggled={toggled}
+      breakPoint="md"
     >
       <Menu
         menuItemStyles={{
@@ -109,8 +113,6 @@ const SideBar = () => {
             title="Dashboard"
             path="/"
             colors={colors}
-            selected={selected}
-            setSelected={setSelected}
             icon={<DashboardOutlined />}
           />
         </Menu>
@@ -136,24 +138,18 @@ const SideBar = () => {
             title="Manage Team"
             path="/team"
             colors={colors}
-            selected={selected}
-            setSelected={setSelected}
             icon={<PeopleAltOutlined />}
           />
           <Item
             title="Contacts Information"
             path="/contacts"
             colors={colors}
-            selected={selected}
-            setSelected={setSelected}
             icon={<ContactsOutlined />}
           />
           <Item
             title="Invoices Balances"
             path="/invoices"
             colors={colors}
-            selected={selected}
-            setSelected={setSelected}
             icon={<ReceiptOutlined />}
           />
         </Menu>
@@ -179,24 +175,18 @@ const SideBar = () => {
             title="Profile Form"
             path="/form"
             colors={colors}
-            selected={selected}
-            setSelected={setSelected}
             icon={<PersonOutlined />}
           />
           <Item
             title="Calendar"
             path="/calendar"
             colors={colors}
-            selected={selected}
-            setSelected={setSelected}
             icon={<CalendarTodayOutlined />}
           />
           <Item
             title="FAQ Page"
             path="/faq"
             colors={colors}
-            selected={selected}
-            setSelected={setSelected}
             icon={<HelpOutlineOutlined />}
           />
         </Menu>
@@ -222,32 +212,24 @@ const SideBar = () => {
             title="Bar Chart"
             path="/bar"
             colors={colors}
-            selected={selected}
-            setSelected={setSelected}
             icon={<BarChartOutlined />}
           />
           <Item
             title="Pie Chart"
             path="/pie"
             colors={colors}
-            selected={selected}
-            setSelected={setSelected}
             icon={<PieChartOutlineOutlined />}
           />
           <Item
             title="Line Chart"
             path="/line"
             colors={colors}
-            selected={selected}
-            setSelected={setSelected}
             icon={<TimelineOutlined />}
           />
           <Item
             title="Geography Chart"
             path="/geography"
             colors={colors}
-            selected={selected}
-            setSelected={setSelected}
             icon={<MapOutlined />}
           />
         </Menu>

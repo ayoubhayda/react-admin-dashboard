@@ -65,7 +65,7 @@ const Team = () => {
       <Box
         mt="40px"
         height="100vh"
-        maxWidth="100%"
+        flex={1}
         sx={{
           "& .MuiDataGrid-root": {
             border: "none",

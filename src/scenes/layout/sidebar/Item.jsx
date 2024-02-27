@@ -1,18 +1,16 @@
 /* eslint-disable react/prop-types */
 import { MenuItem } from "react-pro-sidebar";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-const Item = ({ selected, setSelected, title, path, icon }) => {
+const Item = ({ title, path, icon }) => {
+  const location = useLocation();
   return (
     <MenuItem
       component={<Link to={path} />}
-      onClick={() => {
-        setSelected(title);
-      }}
       to={path}
       icon={icon}
       rootStyles={{
-        color: selected === title && "#6870fa",
+        color: path === location.pathname && "#6870fa",
       }}
     >
       {title}

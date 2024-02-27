@@ -1,3 +1,4 @@
 import Header from "./Header";
+import AccordionItem from "./AccordionItem";
 
-export { Header };
+export { Header, AccordionItem };
