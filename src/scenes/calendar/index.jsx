@@ -100,7 +100,7 @@ const Calendar = () => {
           }}
         >
           <FullCalendar
-            height="100vh"
+            height="75vh"
             plugins={[
               dayGridPlugin,
               timeGridPlugin,

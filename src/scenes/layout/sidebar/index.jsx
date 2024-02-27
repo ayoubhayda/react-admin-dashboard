@@ -8,14 +8,15 @@ import {
   CalendarTodayOutlined,
   ContactsOutlined,
   DashboardOutlined,
+  DonutLargeOutlined,
   HelpOutlineOutlined,
   MapOutlined,
   MenuOutlined,
   PeopleAltOutlined,
   PersonOutlined,
-  PieChartOutlineOutlined,
   ReceiptOutlined,
   TimelineOutlined,
+  WavesOutlined,
 } from "@mui/icons-material";
 import avatar from "../../../assets/images/avatar.png";
 import Item from "./Item";
@@ -218,7 +219,13 @@ const SideBar = () => {
             title="Pie Chart"
             path="/pie"
             colors={colors}
-            icon={<PieChartOutlineOutlined />}
+            icon={<DonutLargeOutlined />}
+          />
+          <Item
+            title="Stream Chart"
+            path="/stream"
+            colors={colors}
+            icon={<WavesOutlined />}
           />
           <Item
             title="Line Chart"

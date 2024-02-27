@@ -450,6 +450,81 @@ export const mockBarData = [
   },
 ];
 
+export const mockStreamData = [
+  {
+    Raoul: 171,
+    Josiane: 82,
+    Marcel: 73,
+    René: 134,
+    Paul: 73,
+    Jacques: 73,
+  },
+  {
+    Raoul: 105,
+    Josiane: 30,
+    Marcel: 55,
+    René: 16,
+    Paul: 154,
+    Jacques: 110,
+  },
+  {
+    Raoul: 18,
+    Josiane: 13,
+    Marcel: 65,
+    René: 111,
+    Paul: 132,
+    Jacques: 181,
+  },
+  {
+    Raoul: 140,
+    Josiane: 101,
+    Marcel: 75,
+    René: 60,
+    Paul: 132,
+    Jacques: 32,
+  },
+  {
+    Raoul: 131,
+    Josiane: 152,
+    Marcel: 102,
+    René: 69,
+    Paul: 141,
+    Jacques: 196,
+  },
+  {
+    Raoul: 46,
+    Josiane: 163,
+    Marcel: 135,
+    René: 50,
+    Paul: 48,
+    Jacques: 79,
+  },
+  {
+    Raoul: 90,
+    Josiane: 164,
+    Marcel: 94,
+    René: 51,
+    Paul: 160,
+    Jacques: 26,
+  },
+  {
+    Raoul: 51,
+    Josiane: 42,
+    Marcel: 13,
+    René: 121,
+    Paul: 140,
+    Jacques: 22,
+  },
+  {
+    Raoul: 48,
+    Josiane: 39,
+    Marcel: 59,
+    René: 15,
+    Paul: 16,
+    Jacques: 40,
+  },
+];
+
 export const mockPieData = [
   {
     id: "hack",
