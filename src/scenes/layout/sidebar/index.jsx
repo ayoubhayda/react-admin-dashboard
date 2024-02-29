@@ -19,6 +19,7 @@ import {
   WavesOutlined,
 } from "@mui/icons-material";
 import avatar from "../../../assets/images/avatar.png";
+import logo from "../../../assets/images/logo.png";
 import Item from "./Item";
 import { ToggledContext } from "../../../App";
 
@@ -58,9 +59,26 @@ const SideBar = () => {
             }}
           >
             {!collapsed && (
-              <Typography variant="h3" color={colors.gray[100]}>
-                ADMINS
-              </Typography>
+              <Box
+                display="flex"
+                alignItems="center"
+                gap="12px"
+                sx={{ transition: ".3s ease" }}
+              >
+                <img
+                  style={{ width: "30px", height: "30px", borderRadius: "8px" }}
+                  src={logo}
+                  alt="Argon"
+                />
+                <Typography
+                  variant="h4"
+                  fontWeight="bold"
+                  textTransform="capitalize"
+                  color={colors.greenAccent[500]}
+                >
+                  Argon
+                </Typography>
+              </Box>
             )}
             <IconButton onClick={() => setCollapsed(!collapsed)}>
               <MenuOutlined />
@@ -84,11 +102,11 @@ const SideBar = () => {
             sx={{ width: "100px", height: "100px" }}
           />
           <Box sx={{ textAlign: "center" }}>
-            <Typography variant="h2" fontWeight="bold" color={colors.gray[100]}>
-              Ed Roh
+            <Typography variant="h3" fontWeight="bold" color={colors.gray[100]}>
+              Tony Stark
             </Typography>
             <Typography
-              variant="h5"
+              variant="h6"
               fontWeight="500"
               color={colors.greenAccent[500]}
             >
@@ -222,12 +240,6 @@ const SideBar = () => {
             icon={<DonutLargeOutlined />}
           />
           <Item
-            title="Stream Chart"
-            path="/stream"
-            colors={colors}
-            icon={<WavesOutlined />}
-          />
-          <Item
             title="Line Chart"
             path="/line"
             colors={colors}
@@ -238,6 +250,12 @@ const SideBar = () => {
             path="/geography"
             colors={colors}
             icon={<MapOutlined />}
+          />
+          <Item
+            title="Stream Chart"
+            path="/stream"
+            colors={colors}
+            icon={<WavesOutlined />}
           />
         </Menu>
       </Box>

@@ -40,7 +40,7 @@ function Dashboard() {
               variant="contained"
               sx={{
                 bgcolor: colors.blueAccent[700],
-                color: colors.gray[100],
+                color: "#fcfcfc",
                 fontSize: isMdDevices ? "14px" : "10px",
                 fontWeight: "bold",
                 p: "10px 20px",
