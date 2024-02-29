@@ -33,9 +33,6 @@ Explore the live demo of Argon Admin Dashboard [here](https://argon-admin-dashbo
 
 ![Light Mode](https://res.cloudinary.com/duxego3ja/image/upload/v1709215626/argon-admin-dashboard/qf006k0kwkhrgmefengy.png)
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contributions and Feedback
 
