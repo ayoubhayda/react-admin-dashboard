@@ -19,7 +19,7 @@ Explore the live demo of Argon Admin Dashboard [here](https://argon-admin-dashbo
 
 ## Get Started
 
-1. Clone the repository: `git clone [repository_url]`
+1. Clone the repository: `git clone https://github.com/ayoubhayda/react-admin-dashboard.git`
 2. Install dependencies: `npm install` or `yarn install`
 3. Start the development server: `npm run dev` or `yarn dev`
 
