@@ -37,10 +37,6 @@ Explore the live demo of Argon Admin Dashboard [here](https://argon-admin-dashbo
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contributions and Feedback
 
 We welcome contributions and feedback from the community to enhance and improve Argon Admin Dashboard further. Feel free to submit pull requests or open issues for any suggestions or bug reports.
