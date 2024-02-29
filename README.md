@@ -15,7 +15,7 @@ Welcome to Argon Admin Dashboard, a sleek and feature-rich solution built with R
 
 ## Demo
 
-Explore the live demo of Argon Admin Dashboard [here]([https://argon-admin-dashboard.web.app/).
+Explore the live demo of Argon Admin Dashboard [here](https://argon-admin-dashboard.web.app/).
 
 ## Get Started
 
