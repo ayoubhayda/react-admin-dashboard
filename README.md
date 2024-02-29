@@ -23,10 +23,6 @@ Welcome to Argon Admin Dashboard, a sleek and feature-rich solution built with R
 
 Contributions are welcome! Feel free to open issues and pull requests.
 
-## Cat Placeholder
-
-![Cute Cat Image](cat_placeholder.jpg)
-
 ## Screenshots
 
 ### Dark Mode
