@@ -1,0 +1,1 @@
+{"version":3,"file":"StreamSlices.d.ts","sourceRoot":"","sources":["../../src/StreamSlices.tsx"],"names":[],"mappings":";AAAA,OAAO,EAAE,eAAe,EAAE,WAAW,EAAE,iBAAiB,EAAE,MAAM,SAAS,CAAA;AAGzE,UAAU,iBAAiB,CAAC,QAAQ,SAAS,WAAW;IACpD,MAAM,EAAE,eAAe,EAAE,CAAA;IACzB,MAAM,EAAE,MAAM,CAAA;IACd,OAAO,EAAE,iBAAiB,CAAC,QAAQ,CAAC,CAAC,cAAc,CAAC,CAAA;CACvD;AAED,eAAO,MAAM,YAAY,0GAexB,CAAA"}
